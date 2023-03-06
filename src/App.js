@@ -4,10 +4,10 @@ import Counter from './components/Counter';
 import Button from './components/Button';
 
 function App() {
-    const [ count, setCount ] = useState(0);
+    const [ count ] = useState(0);
 
     return (<div className="App">
-        <Counter/>
+        <Counter count={count}/>
         <Button/>
         <Button/>
         <Button/>
