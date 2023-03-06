@@ -5,13 +5,14 @@ import Button from './components/Button';
 
 function App() {
     const [ count, setCount ] = useState(0);
+    const incrementCount = () => setCount(count + 1);
 
     return (<div className="App">
         <Counter count={count}/>
-        <Button count={count} onClick={setCount}/>
-        <Button count={count} onClick={setCount}/>
-        <Button count={count} onClick={setCount}/>
-        <Button count={count} onClick={setCount}/>
+        <Button onClick={incrementCount}/>
+        <Button onClick={incrementCount}/>
+        <Button onClick={incrementCount}/>
+        <Button onClick={incrementCount}/>
     </div>);
 }
 
