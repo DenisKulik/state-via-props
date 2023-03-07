@@ -11,8 +11,8 @@ function App() {
 
     return (<div className="App">
         <Counter count={count}/>
-        {texts.map((text) => {
-            return <Button onClick={incrementCount} text={text}/>;
+        {texts.map((text, idx) => {
+            return <Button onClick={incrementCount} text={text} key={idx}/>;
         })}
     </div>);
 }
