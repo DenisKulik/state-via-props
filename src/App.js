@@ -11,10 +11,9 @@ function App() {
 
     return (<div className="App">
         <Counter count={count}/>
-        <Button onClick={incrementCount} text={texts[0]}/>
-        <Button onClick={incrementCount} text={texts[1]}/>
-        <Button onClick={incrementCount} text={texts[2]}/>
-        <Button onClick={incrementCount} text={texts[3]}/>
+        {texts.map((text) => {
+            return <Button onClick={incrementCount} text={text}/>;
+        })}
     </div>);
 }
 
