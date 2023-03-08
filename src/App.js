@@ -14,6 +14,9 @@ function App() {
         {texts.map((text, idx) => {
             return <Button onClick={incrementCount} text={text} key={idx}/>;
         })}
+        <div>
+            <button>Reset</button>
+        </div>
     </div>);
 }
 
