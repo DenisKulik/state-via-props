@@ -16,9 +16,9 @@ function App() {
         {texts.map((text, idx) => {
             return <Button onClick={incrementCount} text={text} key={idx}/>;
         })}
-        <div>
+        {count > 0 && (<div>
             <button style={btnStyle} onClick={resetCount}>Reset</button>
-        </div>
+        </div>)}
     </div>);
 }
 
